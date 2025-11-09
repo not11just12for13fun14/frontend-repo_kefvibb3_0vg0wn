@@ -1,5 +1,6 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
+import RunnerOnBall from './RunnerOnBall';
 
 export default function HeroSection() {
   return (
@@ -9,12 +10,18 @@ export default function HeroSection() {
       </div>
 
       {/* overlay content */}
-      <div className="relative z-10 max-w-xl mx-auto p-6 text-center space-y-4">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Hi, I'm Your Name</h1>
-        <p className="text-slate-300 md:text-lg">Creative developer crafting playful, modern web experiences. Scroll to explore my work, skills, and story.</p>
+      <div className="relative z-10 max-w-5xl mx-auto p-6 text-center space-y-6">
+        <div>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Hi, I'm Your Name</h1>
+          <p className="text-slate-300 md:text-lg mt-2">Creative developer crafting playful, modern web experiences. Scroll to explore my work, skills, and story.</p>
+        </div>
         <div className="flex items-center justify-center gap-3">
           <a href="#projects" className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur border border-white/20 transition">View Projects</a>
           <a href="#contact" className="px-5 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-600 transition">Contact</a>
+        </div>
+        {/* 3D-styled runner on a ball (canvas) */}
+        <div className="mt-4">
+          <RunnerOnBall />
         </div>
       </div>
 
